@@ -1,4 +1,4 @@
-name: objanalysis_ML
+name: intro2ml_environment
 channels:
   - conda-forge
   - defaults
