@@ -18,7 +18,7 @@ class unsupervised():
 
 class supervised():
     def answer1():
-        display(Markdown("Let's say you perform feature scaling before the train-test split. This means the scaling of the unseen data (the testing data) *depends on* the training data. So imagine you are provided the *trained* model from an external source. You'd like to use the model to determine if some meteorological conditions in August are going to produce rain. Nor you or the model knows how to scale the data in such a way that the model can make an educated guess. Thus, the model sees these data as those with seemingly outlandish values. The importance of the order of data preparation is why building *__data preparation pipelines__* is so important in using Machine Learning."))
+        display(Markdown("Let's say you perform feature scaling before the train-test split. This means the scaling of the unseen data (the testing data) *depends on* the training data. <br><br>Now, imagine you are provided the model trained on this data from an external source. You'd like to use the model to determine if some meteorological conditions are going to produce rain. Since the data used to train the model depends on the outcome you're trying to predict, neither you nor the model knows how to scale the new input data in such a way that the model can make an educated guess. The model is unable to contextualize the unseen data. The importance of the order of data preparation is why building *__data preparation pipelines__* is so important in using Machine Learning. The 'gotcha' described above - i.e., performing a test-train split *after* other data preparation - is called *__data leakage__*."))
 
 
     def answer2():
