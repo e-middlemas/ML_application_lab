@@ -10,3 +10,6 @@
 7. Start with the unsupervised learning notebook. 
 8. Finish with the supervised learning notebook. *Note: There's a chance tensorflow won't import correctly. In that case, navigate back to your terminal, ensure the `intro2ml` environment is activated and enter:* `python3 -m pip install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-2.3.0-cp37-cp37m-macosx_10_9_x86_64.whl`. Then re-perform step #5 above.
 9. Have fun!
+<br><br>
+# Corresponding Lecture on Machine Learning
+To view a recording of the lecture that corresponds to these notebooks, please watch [my YouTube video](https://youtu.be/D3iPohiVv3I).
