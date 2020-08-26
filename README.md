@@ -1,5 +1,5 @@
 # Intro to Machine Learning Application Lab
-### For CU-Boulder's ATOC Objective Analysis course
+### For CU-Boulder's ATOC and University of Wisconsin's Objective Data Analysis course
 
 1. Download zip or checkout repository
 2. Navigate to the directory containing the application lab
