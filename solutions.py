@@ -10,7 +10,7 @@ class unsupervised():
         display(Markdown("K-means has a much harder time separating seasons. Because the algorithm works based on the distance between points, the features with the highest variance will dominate the clustering algorithm."))
         
     def answer4():
-        display(Markdown("Finding the separability between two centroids results in larger distance and this larger separability than that among four centroids for the same amount of data. This idea touches upon [the curse of dimensionality](https://deepai.org/machine-learning-glossary-and-terms/curse-of-dimensionality). When trying to predict four different outcomes instead of two, the data becomes too sparse to accurately separate. Side note: what would make separability easier is if all of the features were independent of each other, i.e., had zero correlation, but some features are collinear."))
+        display(Markdown("Finding the separability between two centroids results in larger distance--larger separability than that among four centroids for the same amount of data. This idea touches upon [the curse of dimensionality](https://deepai.org/machine-learning-glossary-and-terms/curse-of-dimensionality). When trying to predict four different outcomes instead of two, the data becomes too sparse to accurately separate. Side note: what would make separability easier is if all of the features were independent of each other, i.e., had zero correlation, but some features are collinear."))
     
     def answer5():
         display(Markdown("The answer depends on which feature is removed. Some features are better predictors of season than others. For example, removing insolation would have a bigger effect than windgust."))
@@ -18,7 +18,7 @@ class unsupervised():
 
 class supervised():
     def answer1():
-        display(Markdown("Let's say you perform feature scaling before the train-test split. This means the scaling of the unseen data (the testing data) *depends on* the training data. <br><br>Now, imagine you are provided the model trained on this data from an external source. You'd like to use the model to determine if some meteorological conditions are going to produce rain. Since the data used to train the model depends on the outcome you're trying to predict, neither you nor the model knows how to scale the new input data in such a way that the model can make an educated guess. The model is unable to contextualize the unseen data. The importance of the order of data preparation is why building *__data preparation pipelines__* is so important in using Machine Learning. The 'gotcha' described above - i.e., performing a test-train split *after* other data preparation - is called *__data leakage__*."))
+        display(Markdown("Let's say you perform feature scaling before the train-test split. This means the scaling of the unseen data (the testing data) *depends on* the training data. So imagine you are provided the *trained* model from an external source. You'd like to use the model to determine if some meteorological conditions in August are going to produce rain. Nor you or the model knows how to scale the data in such a way that the model can make an educated guess. Thus, the model sees these data as those with seemingly outlandish values. The importance of the order of data preparation is why building *__data preparation pipelines__* is so important in using Machine Learning."))
 
 
     def answer2():
